@@ -1,0 +1,390 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,300,600,700);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: none;
+}
+html {
+    height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: #54595d;
+    font-size: 18px;
+}
+body {
+    font: 14px/1.8 'Open Sans', Helvetica, Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    background: #e1e1e1 url('../images/background.jpg');
+    color: #8c9197;
+}
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    min-height: 100%;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+    behavior: url(/sites/all/themes/perevozki/css/ie-css3.htc);
+}
+
+.clear {
+    clear: both;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+    background: #24272c;
+    color: #fff;
+    margin-bottom: 20px;
+    border-bottom: 5px solid #ff7000;
+    height: 120px;
+}
+
+.logo {
+    float: left;
+    margin: 20px 0 0 30px;
+}
+
+.logo img {
+    width: 250px;
+}
+
+.navigation {
+    float: right;
+    margin: 40px 30px 0 0;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.navigation ul li {
+    float: left;
+}
+
+.navigation ul li a {
+    color: #fff;
+    padding: 5px 20px;
+    text-decoration: none;
+    display: block;
+    border-left: 1px solid #4d4d4d;
+}
+
+.navigation ul li:first-child a {
+    border-left: none;
+}
+
+.navigation ul li a.active {
+    background: #ff7000;
+}
+
+.navigation ul li a.active:hover {
+    background: #ff7000;
+}
+
+.navigation ul li a:hover {
+    background: #666666;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+    padding: 0 10px 80px;
+}
+
+
+
+.content img {
+    border: 1px solid #cccccc;
+    padding: 5px;
+}
+
+.images {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.image-big {
+    float: left;
+    margin-bottom: -5px;
+}
+.image-small img {
+    margin-left: 10px;
+    float: left;
+    width: 280px;
+    height: 139px;
+}
+
+#block-system-main > div > div > div.images > div.image-small > div > div > div.field-item.odd > img {
+    margin-bottom: 10px;
+}
+
+.article-main h1 {
+    text-align: center;
+}
+
+.view-catalog {
+    overflow: hidden;
+}
+
+.catalog-main {
+    padding-right: 3%;
+    margin-bottom: 20px;
+}
+
+.catalog-main img {
+    float: left;
+    margin: 0 5px 5px 0;
+}
+
+.about_us {
+    overflow: hidden;
+}
+
+.banners {
+    float: left;
+}
+.banners > .block-block > div.content {
+    padding: 0 20px 0 0;
+}
+
+.about-info {
+    float: left;
+    width: 660px;
+    margin-left: 10px;
+}
+
+.contacts {
+    overflow: hidden;
+}
+
+.contacts h1 {
+    margin-bottom: 10px;
+}
+
+.contacts-info {
+    float: left;
+    width: 50%;
+}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+    width: 960px;
+    /*margin: 0 auto;*/
+    background: #1f2022;
+    color: #fff;
+    padding: 20px 20px;
+    overflow: hidden;
+    border-top: 3px solid #666666;
+
+    margin: -80px auto 0;
+    height: 40px;
+    position: relative;
+}
+
+.footer-menu {
+    float: left;
+}
+
+.footer-menu ul {
+    list-style: none;
+}
+
+.footer-menu ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+.footer-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.create {
+    float: right;
+}
+
+.create a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.create a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------- Buttons    ---------------- */
+
+input.form-submit,
+a.button {
+    background: #fff url(../images/buttons.png) 0 0 repeat-x;
+    border: 1px solid #e4e4e4;
+    border-bottom: 1px solid #b4b4b4;
+    border-left-color: #d2d2d2;
+    border-right-color: #d2d2d2;
+    color: #3a3a3a;
+    cursor: pointer;
+    font-size: 0.929em;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-right: 0.6em; /* LTR */
+    padding: 4px 17px;
+    -khtml-border-radius: 15px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+}
+a.button:link,
+a.button:visited,
+a.button:hover,
+a.button:focus,
+a.button:active {
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+/* ----- System Tabs ----- */
+
+.tabs {
+    margin-bottom: 10px;
+}
+.tabs ul.primary {
+    padding: 0 3px;
+    margin: 0;
+    overflow: hidden;
+    border: none;
+    background: transparent url(../images/tabs-border.png) repeat-x left bottom;
+}
+.tabs ul.primary li {
+    display: block;
+    float: left; /* LTR */
+    vertical-align: bottom;
+    margin: 0 5px 0 0; /* LTR */
+}
+.tabs ul.primary li.active a {
+    border-bottom: 1px solid #ffffff;
+}
+.tabs ul.primary li a {
+    color: #000;
+    background-color: #ededed;
+    height: 1.8em;
+    line-height: 1.9;
+    display: block;
+    font-size: 0.929em;
+    float: left; /* not LTR */
+    padding: 0 10px 3px;
+    margin: 0;
+    text-shadow: 0 1px 0 #fff;
+    -khtml-border-radius-topleft: 6px;
+    -moz-border-radius-topleft: 6px;
+    -webkit-border-top-left-radius: 6px;
+    border-top-left-radius: 6px;
+    -khtml-border-radius-topright: 6px;
+    -moz-border-radius-topright: 6px;
+    -webkit-border-top-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.tabs ul.primary li.active a {
+    background-color: #ffffff;
+}
+.tabs ul.secondary {
+    border-bottom: none;
+    padding: 0.5em 0;
+}
+.tabs ul.secondary li {
+    display: block;
+    float: left; /* LTR */
+}
+.tabs ul.secondary li:last-child {
+    border-right: none; /* LTR */
+}
+.tabs ul.secondary li:first-child {
+    padding-left: 0; /* LTR */
+}
+.tabs ul.secondary li a {
+    padding: 0.25em 0.5em;
+}
+.tabs ul.secondary li a.active {
+    background: #f2f2f2;
+    border-bottom: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+}
+ul.action-links {
+    list-style: none;
+    margin: 5px;
+    padding: 0.5em 1em;
+}
+ul.action-links li {
+    display: inline-block;
+    margin-left: 10px;
+}
+ul.action-links li a {
+    padding-left: 15px;
+    background: url(../images/add.png) no-repeat left center;
+    margin: 0 10px 0 0;
+}
+
+.item-list ul li {
+    margin: 0;
+}
+
+
+.item-list .pager li {
+    padding: 0;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+}
+
+.item-list .pager li a:hover {
+    background: #f9f9f9;
+}
+
+.item-list .pager li a {
+    border: 1px solid #bababa;
+    color: #727272;
+    background: #ebebeb;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: inherit;
+}
+
+.pager li.pager-current {
+    background: #686868;
+    padding: 5px 10px;
+    color: #f0f0f0;
+    font-weight: normal;
+    border: 1px solid #4e4e4e;
+}
+
+.view-catalog > div > div.float {
+    float: left;
+    width: 50%; //значение зависит от желаемого количества колонок (например для 5ти колонок нужно указать 18-20%)
+}
+.clr {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
