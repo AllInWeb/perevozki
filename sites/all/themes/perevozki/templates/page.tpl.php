@@ -79,10 +79,16 @@
         <div class="logo">
             <a href="/"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
         </div>
-        <nav class="navigation">
+        <div class="navigation">
             <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array(), )); ?>
-        </nav>
+        </div>
     </div><!-- .header-->
+
+    <?php if ($messages): ?>
+        <div id="messages"><div class="section clearfix">
+                <?php print $messages; ?>
+            </div></div> <!-- /.section, /#messages -->
+    <?php endif; ?>
 
     <div class="content">
 
@@ -99,6 +105,6 @@
         <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array(), )); ?>
     </div>
     <div class="create">
-        <a href="#">AllinWeb</a>
+        <a href="http://test-drupal.tk" title="Cоздание сайтов от компании AllinWEB" target="_blank"><img src="/sites/all/themes/perevozki/images/create-final.png" alt=""/></a>
     </div>
 </div><!-- .footer -->

@@ -6,5 +6,7 @@
         <?php print render($content['field_phone']); ?><br>
         <?php print render($content['field_email']); ?>
     </div>
+    <div style="float: left">
     <?php print render($content['field_map']); ?>
+    </div>
 </div>
